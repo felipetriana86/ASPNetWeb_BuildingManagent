@@ -1,0 +1,35 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron" margin="0" style="background-image: linear-gradient(to right,white,white,#003d4d)">
+
+    <img src="/images/logoBuiliding.png" alt="Icon" style="height:180px; width:50%;float:left; opacity:0.9">
+
+
+    <h2 style="font-size: 40px">F&J Online Building Management Web App</h2>
+    <h4 class="lead">Welcome!</h4><br />
+    <div float:left>
+        <h4 class="lead" style="color:dodgerblue; margin:0">Employee</h4>
+        <h5><i>@Html.ActionLink("\tLog In", "EmployeeLogin", "Accounts")</i></h5>
+        <h5><i>@Html.ActionLink("\tSign Up", "EmployeeSignup", "Accounts")</i></h5>
+    </div>
+    
+    <div>
+        <i><b><h4 class="lead" style="color: dodgerblue; margin: 0; ">Tenant</h4></b></i>
+        <h5><i>@Html.ActionLink("\tLog In", "TenantLogin", "Accounts")</i></h5>
+        <h5><i>@Html.ActionLink("\tSign Up", "TenantSignup", "Accounts")</i></h5>
+    </div>
+
+
+</div>
+
+<div style="background-color: #cdeff7; padding-left: 50px; font-style: italic;  ">
+    @Html.ActionLink("- List of Apartments", "Index", "Apartments")<br />
+    @Html.ActionLink("- List of Appointments", "Index", "Appointments")<br />
+    @Html.ActionLink("- List of Buildings", "Index", "Buildings")<br />
+    @Html.ActionLink("- List of Employees", "Index", "Employees")<br />
+    @Html.ActionLink("- List of Messages", "Index", "Messages")<br />
+    @Html.ActionLink("- List of Tenants", "Index", "Tenants")
+    <!--@Html.ActionLink("- Log in", "EmployeeLogin", "Accounts")<br /> -->
+    </div>
